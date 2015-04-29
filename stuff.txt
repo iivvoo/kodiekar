@@ -1,0 +1,8 @@
+- already viewed (uit kodi db?)
+- favorites (uit kodi db?)
+- refactoren
+- requests plugin
+- git inchecken
+- watchlist
+- opleuken verschillende views, algemene browse/listing/url generation
+

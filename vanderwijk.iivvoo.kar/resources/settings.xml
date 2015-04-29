@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<settings>
+    <category label="30000">
+        <setting label="30001" type="text"   id="davhost" default="example.org"/>
+        <setting label="30002" type="number"   id="davport" default="1337"/>
+    </category>
+    <category label="30100">
+        <setting label="30101" type="action" action="RunScript(my.addon.id, clear)"/>
+    </category>
+</settings>

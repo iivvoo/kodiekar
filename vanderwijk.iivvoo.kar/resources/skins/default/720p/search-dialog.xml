@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window id="1234" type="dialog">
+    <defaultcontrol always="true">9</defaultcontrol>
+    <backgroundcolor>0x00FFFFFF</backgroundcolor>
+    <allowoverlay>yes</allowoverlay>
+    <type>dialog</type>
+    <coordinates>
+        <posx>40</posx>
+        <posy>10</posy>
+    </coordinates>
+    <controls>
+        <!-- background/styling for entire window, 1200x700px -->
+        <control type="image">
+          <left>0</left>
+          <top>0</top>
+          <width>1200</width>
+          <height>700</height>
+          <texture border="15">ContentPanel.png</texture>
+        </control>
+
+        <control type="grouplist">
+            <orientation>vertical</orientation>
+            <left>40</left>
+            <top>40</top>
+            <width>1120</width>
+            <height>620</height>
+
+            <!-- Search label -->
+            <control type="label">
+                <left>0</left>
+                <top>0</top>
+                <height>80</height>
+                <width>1120</width>
+                <label>[B]Search[/B]</label>
+            </control>
+
+            <!-- Search -->
+            <control type="edit" id="9">
+                <left>0</left>
+                <top>80</top>
+                <height>80</height>
+                <width>1120</width>
+                <height>66</height>
+                <textoffsetx>20</textoffsetx>
+                <textwidth>1580</textwidth>
+                <onup>noop</onup>
+                <ondown>9001</ondown>
+                <onleft>noop</onleft>
+                <onright>noop</onright>
+            </control>
+
+            <!-- Genre  label -->
+            <control type="label">
+                <left>0</left>
+                <height>80</height>
+                <top>160</top>
+                <width>1120</width>
+                <label>Genre</label>
+            </control>
+
+            <!-- list control will be injected here in python,
+                 won't work in xml -->
+
+            <!-- Button grouplist -->
+            <control type="grouplist" id="9000">
+                <left>0</left>
+                <top>600</top>
+                <width>1120</width>
+                <height>80</height>
+                <itemgap>0</itemgap>
+                <onleft>noop</onleft>
+                <onright>noop</onright>
+                <onup>9001</onup>
+                <ondown>noop</ondown>
+                <orientation>horizontal</orientation>
+
+                <!-- Search Button -->
+                <control type="button" id="26">
+                    <width>350</width>
+                    <label>Search Video</label>
+                </control>
+
+                <!-- Cancel Button -->
+                <control type="button" id="27">
+                    <width>350</width>
+                    <label>Search Shows</label>
+                </control>
+
+                <!-- Defaults Button -->
+                <control type="button" id="28">
+                    <width>350</width>
+                    <label>Cancel</label>
+                </control>
+
+            </control>
+        </control>
+    </controls>
+</window>
