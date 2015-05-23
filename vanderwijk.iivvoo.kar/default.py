@@ -441,7 +441,7 @@ class Kar(object):
         player = xbmc.Player()
 
         path = args.get('path', '')
-        url = 'http://{0}:{1}{2}'.format(self.davhost, self.davport, path)
+        url = 'http://{0}:{1}{2}'.format(self.davhost, self.davport, urllib.quote(path))
 
         log.info("PLAY " + url)
 
